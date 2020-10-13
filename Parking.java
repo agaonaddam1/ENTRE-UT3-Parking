@@ -92,8 +92,7 @@ public class Parking
         switch(tipoTarifa) {
             case COMERCIAL:
             if ((salidaMinutos - entradaMinutos) < tresAMinutos){
-                importe = ((salidaMinutos - entradaMinutos) / 60) *
-                PRECIO_PRIMERAS3_COMERCIAL;
+                importe = PRECIO_PRIMERAS3_COMERCIAL;
             }
             else {
                 importe = (PRECIO_PRIMERAS3_COMERCIAL) +
@@ -198,7 +197,7 @@ public class Parking
             dia = "Domingo";
         }
         else{
-            dia = "Ningino";
+            dia = "Ninguno";
         }
         return dia;
     }
